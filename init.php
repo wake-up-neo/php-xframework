@@ -8,9 +8,6 @@ if (php_sapi_name() === 'cli') {
     ini_set('display_errors', 0);
 }
 
-/**
- * @param $className
- */
 function autoload($className)
 {
     $className = ltrim($className, '\\');
